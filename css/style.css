@@ -1,0 +1,42 @@
+body {
+    font-family: 'Signika Negative', sans-serif;
+}
+#game-container {
+    border: 2px solid black;
+    display: flex;
+   
+   
+}
+.card {
+    width: 300px;
+}
+#question {
+    padding: 30px;
+}
+#who-container {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+
+}
+#what-container{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+#where-container {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+#when-container {
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: column;
+}
+#flexCard{
+border: 2px solid red;
+
+height: 100px;
+    
+}
