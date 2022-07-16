@@ -1,40 +1,86 @@
 body {
     font-family: 'Signika Negative', sans-serif;
-}
-#game-container {
-    border: 2px solid black;
-    display: flex;
-    width:800px;
-    justify-content: space-around;
-   
-   
-   
-}
-.card {
-    width: 300px;
-}
-#question {
-    padding: 30px;
-}
-#who-container {
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#game-container {
     
+    display: flex;
+    width:800px;
+    justify-content: center;
+}
+h2 {
+    text-align: center;
+    background-color: blue;
+    color: rgb(236, 199, 11);
+    padding: 30px;
+    margin: 0;
+    border-radius: 12px;
+    border: 1px solid black;
+}
 
+
+.card {
+    width: 200px;
+    height: 150px; 
+    background-color: rgb(26, 26, 255);
+    border-left: solid rgb(19, 19, 160) 10px;
+    border-right: solid rgb(11, 11, 91) 10px;
+    border-top: solid rgb(61, 61, 200)10px;
+    border-bottom: solid rgb(20, 20, 89) 10px;
+    text-align: center;
+    margin: 3px;
+    color: yellow;
+   
+}
+
+.backCard{
+    /* display: none; */
+}
+
+.backCard {
+    width: 200px;
+    height: 150px; 
+    background-color: rgb(26, 26, 255);
+    border-left: solid rgb(19, 19, 160) 10px;
+    border-right: solid rgb(11, 11, 91) 10px;
+    border-top: solid rgb(61, 61, 200)10px;
+    border-bottom: solid rgb(20, 20, 89) 10px;
+    text-align: center;
+    margin: 3px;
+    color: yellow;
+    
+} 
+
+
+.buttonOne {
+    background-color: rgb(24, 171, 24);
+    margin: 2px;
+    padding: 5px;
+}
+
+.buttonTwo {
+    background-color: rgb(190, 57, 37);
+    margin: 2px;
+    padding: 5px;
+}
+
+#who-container {
+    display: flex;
+    flex-direction: column;
 }
 #what-container{
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
 }
 #where-container {
-    border: 2px solid blue;
     display: flex;
     flex-direction: column;
 }
 #when-container {
-    border: 2px solid pink;
     display: flex;
     flex-direction: column;
 }
+
