@@ -4,6 +4,9 @@ body {
 #game-container {
     border: 2px solid black;
     display: flex;
+    width:800px;
+    justify-content: space-around;
+   
    
    
 }
@@ -17,6 +20,7 @@ body {
     border: 2px solid green;
     display: flex;
     flex-direction: column;
+    
 
 }
 #what-container{
@@ -33,10 +37,4 @@ body {
     border: 2px solid pink;
     display: flex;
     flex-direction: column;
-}
-#flexCard{
-border: 2px solid red;
-
-height: 100px;
-    
 }
