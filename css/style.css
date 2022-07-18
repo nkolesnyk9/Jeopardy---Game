@@ -1,86 +1,107 @@
-body {
-    font-family: 'Signika Negative', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#game-container {
-    
-    display: flex;
-    width:800px;
-    justify-content: center;
-}
-h2 {
-    text-align: center;
-    background-color: blue;
-    color: rgb(236, 199, 11);
-    padding: 30px;
+* {
+    padding: 0;
     margin: 0;
-    border-radius: 12px;
-    border: 1px solid black;
-}
-
-
-.card {
-    width: 200px;
-    height: 150px; 
-    background-color: rgb(26, 26, 255);
-    border-left: solid rgb(19, 19, 160) 10px;
-    border-right: solid rgb(11, 11, 91) 10px;
-    border-top: solid rgb(61, 61, 200)10px;
-    border-bottom: solid rgb(20, 20, 89) 10px;
-    text-align: center;
-    margin: 3px;
-    color: yellow;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    height: 100vh;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    background: #060AB2;
+ }
+ 
+ h2 {
+    color: white;
+ }
+ .jeopardy-game {
+    width: 640px;
+   height: 640px;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   perspective: 1000px;
+ }
+ .who-container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+ }
+ .what-container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+ }
+ .where-container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+ }
+ .when-container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+ }
+ .jeopardy-card {
+    width: 250px;
+    height: 180px;
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+ }
+ 
+ .front-card,
+ .back-card {
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+   position: absolute;
+   border-radius: 5px;
    
-}
-
-.backCard{
-    /* display: none; */
-}
-
-.backCard {
-    width: 200px;
-    height: 150px; 
-    background-color: rgb(26, 26, 255);
-    border-left: solid rgb(19, 19, 160) 10px;
-    border-right: solid rgb(11, 11, 91) 10px;
-    border-top: solid rgb(61, 61, 200)10px;
-    border-bottom: solid rgb(20, 20, 89) 10px;
+   backface-visibility: hidden;
+ }
+ .jeopardy-card:active {
+    transform: scale(0.97);
+     transition: transform .2s;
+   }
+ 
+   .jeopardy-card.flip {
+     transform: rotateY(180deg);
+   }
+ 
+   .front-card {
+     transform: rotateY(180deg);
+     color: white;
+     background: #1C7CCC;
+   }
+ 
+   .back-card {
+    background: #101be8;
+    color: rgb(239, 189, 11);
+    font-size: 32px;
     text-align: center;
-    margin: 3px;
-    color: yellow;
-    
-} 
-
-
-.buttonOne {
-    background-color: rgb(24, 171, 24);
-    margin: 2px;
+    font-weight: bold;
+ 
+   }
+   h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+   }
+ 
+   button {
     padding: 5px;
-}
-
-.buttonTwo {
-    background-color: rgb(190, 57, 37);
-    margin: 2px;
-    padding: 5px;
-}
-
-#who-container {
-    display: flex;
-    flex-direction: column;
-}
-#what-container{
-    display: flex;
-    flex-direction: column;
-}
-#where-container {
-    display: flex;
-    flex-direction: column;
-}
-#when-container {
-    display: flex;
-    flex-direction: column;
-}
-
+    margin-left: 5px;
+    font-size: 15px;
+   }
+ 
+   .buttonOne {
+    background-color: rgb(64, 225, 64);
+   }
+ 
+   .buttonTwo {
+    background-color: rgb(241, 87, 87);
+   }
