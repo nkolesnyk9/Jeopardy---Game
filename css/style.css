@@ -11,35 +11,39 @@
      align-items: center;
     background: #060AB2;
  }
- 
+ h1 {
+   text-align: center;
+   margin: 8px;
+   color: rgb(238, 211, 7);
+ }
  h2 {
     color: white;
+    text-align: center;
+    border: 2px solid blue;
  }
- .jeopardy-game {
-    width: 640px;
-   height: 640px;
+ .jeopardy-game{
+   width: 1011;
    margin: auto;
    display: flex;
    justify-content: center;
    perspective: 1000px;
+  border: 2px solid red;
  }
  .who-container {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
+   
  }
  .what-container {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
+    
  }
  .where-container {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
  }
  .when-container {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
  }
@@ -52,6 +56,10 @@
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
+    color: white;
+     background: #1C7CCC;
+     border-radius: 5px;
+
  }
  
  .front-card,
@@ -69,24 +77,36 @@
      transition: transform .2s;
    }
  
-   .jeopardy-card.flip {
+   /* .jeopardy-card.flip {
      transform: rotateY(180deg);
-   }
+     pointer-events: none;
+   } */
  
-   .front-card {
-     transform: rotateY(180deg);
-     color: white;
-     background: #1C7CCC;
-   }
- 
-   .back-card {
+   /* .front-card.flip {
+     /* transform: rotateY(180deg);
+     pointer-events: none; */
+     
+   
+  */
+
+ .divButtons {
+   pointer-events: auto;
+   z-index: 1;
+ }
+   .back-card{
     background: #101be8;
     color: rgb(239, 189, 11);
     font-size: 32px;
     text-align: center;
     font-weight: bold;
+  
  
    }
+   .back-card.flip{
+      transform: rotateY(180deg);
+      pointer-events: none;
+     }
+
    h3 {
     font-size: 24px;
     margin-bottom: 15px;
@@ -104,4 +124,10 @@
  
    .buttonTwo {
     background-color: rgb(241, 87, 87);
+   }
+
+   .score {
+      border: 2px solid red;
+      display: flex;
+      justify-content: center;
    }

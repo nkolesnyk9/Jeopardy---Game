@@ -74,42 +74,61 @@ const categoryWhen = [
    }
 ];
 
+const cards = document.querySelectorAll('.back-card');
+
+
+function flipCard() {
+  this.classList.toggle('flip');
+
+}
+
+cards.forEach(card => card.addEventListener('click',flipCard));
 
 
 const forWhoOne = () => {
+   let points = 100 
        let questionCard = document.querySelector(".whoOne")
        let h3 = document.createElement("h3")
        h3.innerHTML = categoryWho[0].question
        questionCard.appendChild(h3)
+       let divButton = document.createElement("div")
+       divButton.setAttribute("class", "divButtons")
+       questionCard.appendChild(divButton)
        let buttonOne = document.createElement("button")
       buttonOne.setAttribute("class","buttonOne")
       let buttonTwo = document.createElement("button")
       buttonTwo.setAttribute("class","buttonTwo")
        buttonOne.innerHTML = categoryWho[0].answers[0]
        buttonTwo.innerHTML = categoryWho[0].answers[1]
-       questionCard.appendChild(buttonOne)
-       questionCard.appendChild(buttonTwo)
+       divButton.appendChild(buttonOne)
+       divButton.appendChild(buttonTwo)
+       
 
        
-      //  const buttons = document.querySelector(".buttonTwo")
-      //  buttons.addEventListener("click",(e) => {
-      //    let correctAnswer = categoryWho[0].correct
-      //    console.log(correctAnswer)
-      //    let h4 = document.createElement("h4")
-      //    if(buttonOne === correctAnswer){
-      //      h4 = 100
-      //    } else if (buttonOne != correctAnswer) {
-      //      h4 = 0
-      //    }
-      //    if(buttonTwo === correctAnswer){
-      //      h4 = 100
-      //    } else if (buttonTwo != correctAnswer) {
-      //      h4 = 0
-      //    }
-        
-      //  })
-  
+       const buttons = document.querySelector(".divButtons")
+       let correctAnswer = categoryWho[0].correct
+         console.log(correctAnswer)
+         let h4 = document.createElement("h4")
+         let scoreDisplay = document.querySelector(".score")
+         scoreDisplay.appendChild(h4)
+       buttons.addEventListener("click",() => {
+         alert("you clicked the button")
+         if(buttonOne === correctAnswer){
+           h4.innerHTML = points
+         } else if (buttonOne != correctAnswer) {
+           h4.innerHTML = 0
+         }
+         if(buttonTwo === correctAnswer){
+           h4.innerHTML = points
+         } else if (buttonTwo != correctAnswer) {
+           h4.innerHTML = 0
+          
+         }
+         
+       })
      
+    
+      
 }
 forWhoOne()
 
@@ -118,14 +137,17 @@ const forWhoTwo = () => {
    let h3 = document.createElement("h3")
    h3.innerHTML = categoryWho[1].question
    questionCard.appendChild(h3)
+   let divButton = document.createElement("div")
+   divButton.setAttribute("class", "divButtons")
+   questionCard.appendChild(divButton)
    let buttonOne = document.createElement("button")
   buttonOne.setAttribute("class","buttonOne")
   let buttonTwo = document.createElement("button")
   buttonTwo.setAttribute("class","buttonTwo")
    buttonOne.innerHTML = categoryWho[1].answers[0]
    buttonTwo.innerHTML = categoryWho[1].answers[1]
-   questionCard.appendChild(buttonOne)
-   questionCard.appendChild(buttonTwo)
+   divButton.appendChild(buttonOne)
+   divButton.appendChild(buttonTwo)
    
 
 }
@@ -135,14 +157,17 @@ const forWhoThree = () => {
    let h3 = document.createElement("h3")
    h3.innerHTML = categoryWho[2].question
    questionCard.appendChild(h3)
+   let divButton = document.createElement("div")
+       divButton.setAttribute("class", "divButtons")
+       questionCard.appendChild(divButton)
    let buttonOne = document.createElement("button")
   buttonOne.setAttribute("class","buttonOne")
   let buttonTwo = document.createElement("button")
   buttonTwo.setAttribute("class","buttonTwo")
    buttonOne.innerHTML = categoryWho[2].answers[0]
    buttonTwo.innerHTML = categoryWho[2].answers[1]
-   questionCard.appendChild(buttonOne)
-   questionCard.appendChild(buttonTwo)
+   divButton.appendChild(buttonOne)
+   divButton.appendChild(buttonTwo)
 
 }
 forWhoThree()
@@ -152,14 +177,17 @@ const forWhatOne = () => {
    let h3 = document.createElement("h3")
    h3.innerHTML = categoryWhat[0].question
    questionCard.appendChild(h3)
+   let divButton = document.createElement("div")
+       divButton.setAttribute("class", "divButtons")
+       questionCard.appendChild(divButton)
    let buttonOne = document.createElement("button")
   buttonOne.setAttribute("class","buttonOne")
   let buttonTwo = document.createElement("button")
   buttonTwo.setAttribute("class","buttonTwo")
    buttonOne.innerHTML = categoryWhat[0].answers[0]
    buttonTwo.innerHTML = categoryWhat[0].answers[1]
-   questionCard.appendChild(buttonOne)
-   questionCard.appendChild(buttonTwo)
+   divButton.appendChild(buttonOne)
+   divButton.appendChild(buttonTwo)
 
 }
 forWhatOne()
@@ -169,14 +197,17 @@ const forWhatTwo = () => {
    let h3 = document.createElement("h3")
    h3.innerHTML = categoryWhat[1].question
    questionCard.appendChild(h3)
+   let divButton = document.createElement("div")
+       divButton.setAttribute("class", "divButtons")
+       questionCard.appendChild(divButton)
    let buttonOne = document.createElement("button")
   buttonOne.setAttribute("class","buttonOne")
   let buttonTwo = document.createElement("button")
   buttonTwo.setAttribute("class","buttonTwo")
    buttonOne.innerHTML = categoryWhat[1].answers[0]
    buttonTwo.innerHTML = categoryWhat[1].answers[1]
-   questionCard.appendChild(buttonOne)
-   questionCard.appendChild(buttonTwo)
+   divButton.appendChild(buttonOne)
+   divButton.appendChild(buttonTwo)
 
 }
 forWhatTwo()
@@ -186,14 +217,17 @@ const forWhatThree = () => {
    let h3 = document.createElement("h3")
    h3.innerHTML = categoryWhat[2].question
    questionCard.appendChild(h3)
+   let divButton = document.createElement("div")
+       divButton.setAttribute("class", "divButtons")
+       questionCard.appendChild(divButton)
    let buttonOne = document.createElement("button")
   buttonOne.setAttribute("class","buttonOne")
   let buttonTwo = document.createElement("button")
   buttonTwo.setAttribute("class","buttonTwo")
    buttonOne.innerHTML = categoryWhat[2].answers[0]
    buttonTwo.innerHTML = categoryWhat[2].answers[1]
-   questionCard.appendChild(buttonOne)
-   questionCard.appendChild(buttonTwo)
+   divButton.appendChild(buttonOne)
+   divButton.appendChild(buttonTwo)
 
 }
 forWhatThree()
@@ -203,14 +237,17 @@ const forWhereOne = () => {
    let h3 = document.createElement("h3")
    h3.innerHTML = categoryWhere[0].question
    questionCard.appendChild(h3)
+   let divButton = document.createElement("div")
+       divButton.setAttribute("class", "divButtons")
+       questionCard.appendChild(divButton)
    let buttonOne = document.createElement("button")
   buttonOne.setAttribute("class","buttonOne")
   let buttonTwo = document.createElement("button")
   buttonTwo.setAttribute("class","buttonTwo")
    buttonOne.innerHTML = categoryWhere[0].answers[0]
    buttonTwo.innerHTML = categoryWhere[0].answers[1]
-   questionCard.appendChild(buttonOne)
-   questionCard.appendChild(buttonTwo)
+   divButton.appendChild(buttonOne)
+   divButton.appendChild(buttonTwo)
 
 }
 forWhereOne()
@@ -220,14 +257,17 @@ const forWhereTwo = () => {
    let h3 = document.createElement("h3")
    h3.innerHTML = categoryWhere[1].question
    questionCard.appendChild(h3)
+   let divButton = document.createElement("div")
+       divButton.setAttribute("class", "divButtons")
+       questionCard.appendChild(divButton)
    let buttonOne = document.createElement("button")
   buttonOne.setAttribute("class","buttonOne")
   let buttonTwo = document.createElement("button")
   buttonTwo.setAttribute("class","buttonTwo")
    buttonOne.innerHTML = categoryWhere[1].answers[0]
    buttonTwo.innerHTML = categoryWhere[1].answers[1]
-   questionCard.appendChild(buttonOne)
-   questionCard.appendChild(buttonTwo)
+   divButton.appendChild(buttonOne)
+   divButton.appendChild(buttonTwo)
 
 }
 forWhereTwo()
@@ -237,14 +277,17 @@ const forWhereThree = () => {
    let h3 = document.createElement("h3")
    h3.innerHTML = categoryWhere[2].question
    questionCard.appendChild(h3)
+   let divButton = document.createElement("div")
+       divButton.setAttribute("class", "divButtons")
+       questionCard.appendChild(divButton)
    let buttonOne = document.createElement("button")
   buttonOne.setAttribute("class","buttonOne")
   let buttonTwo = document.createElement("button")
   buttonTwo.setAttribute("class","buttonTwo")
    buttonOne.innerHTML = categoryWhere[2].answers[0]
    buttonTwo.innerHTML = categoryWhere[2].answers[1]
-   questionCard.appendChild(buttonOne)
-   questionCard.appendChild(buttonTwo)
+   divButton.appendChild(buttonOne)
+   divButton.appendChild(buttonTwo)
 
 }
 forWhereThree()
@@ -254,14 +297,17 @@ const forWhenOne = () => {
    let h3 = document.createElement("h3")
    h3.innerHTML = categoryWhen[0].question
    questionCard.appendChild(h3)
+   let divButton = document.createElement("div")
+       divButton.setAttribute("class", "divButtons")
+       questionCard.appendChild(divButton)
    let buttonOne = document.createElement("button")
   buttonOne.setAttribute("class","buttonOne")
   let buttonTwo = document.createElement("button")
   buttonTwo.setAttribute("class","buttonTwo")
    buttonOne.innerHTML = categoryWhen[0].answers[0]
    buttonTwo.innerHTML = categoryWhen[0].answers[1]
-   questionCard.appendChild(buttonOne)
-   questionCard.appendChild(buttonTwo)
+   divButton.appendChild(buttonOne)
+   divButton.appendChild(buttonTwo)
 
 }
 forWhenOne()
@@ -271,14 +317,17 @@ const forWhenTwo = () => {
    let h3 = document.createElement("h3")
    h3.innerHTML = categoryWhen[1].question
    questionCard.appendChild(h3)
+   let divButton = document.createElement("div")
+       divButton.setAttribute("class", "divButtons")
+       questionCard.appendChild(divButton)
    let buttonOne = document.createElement("button")
   buttonOne.setAttribute("class","buttonOne")
   let buttonTwo = document.createElement("button")
   buttonTwo.setAttribute("class","buttonTwo")
    buttonOne.innerHTML = categoryWhen[1].answers[0]
    buttonTwo.innerHTML = categoryWhen[1].answers[1]
-   questionCard.appendChild(buttonOne)
-   questionCard.appendChild(buttonTwo)
+   divButton.appendChild(buttonOne)
+   divButton.appendChild(buttonTwo)
 
 }
 forWhenTwo()
@@ -288,25 +337,22 @@ const forWhenThree = () => {
    let h3 = document.createElement("h3")
    h3.innerHTML = categoryWhen[2].question
    questionCard.appendChild(h3)
+   let divButton = document.createElement("div")
+       divButton.setAttribute("class", "divButtons")
+       questionCard.appendChild(divButton)
    let buttonOne = document.createElement("button")
   buttonOne.setAttribute("class","buttonOne")
   let buttonTwo = document.createElement("button")
   buttonTwo.setAttribute("class","buttonTwo")
    buttonOne.innerHTML = categoryWhen[2].answers[0]
    buttonTwo.innerHTML = categoryWhen[2].answers[1]
-   questionCard.appendChild(buttonOne)
-   questionCard.appendChild(buttonTwo)
+   divButton.appendChild(buttonOne)
+   divButton.appendChild(buttonTwo)
 
 }
 forWhenThree()
 
-const cards = document.querySelectorAll('.jeopardy-card');
 
-function flipCard() {
-  this.classList.toggle('flip');
-}
-
-cards.forEach(card => card.addEventListener('click', flipCard,true));
 
 
 // const buttons = document.querySelectorAll("button")
