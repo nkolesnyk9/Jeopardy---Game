@@ -98,7 +98,7 @@ const forWhoOne = () => {
       buttonOne.setAttribute("class","buttonOne")
       let buttonTwo = document.createElement("button")
       buttonTwo.setAttribute("class","buttonTwo")
-       buttonOne.innerHTML = categoryWho[0].answers[0]
+       buttonOne.innerHTML = categoryWho[0].correct
        buttonTwo.innerHTML = categoryWho[0].answers[1]
        divButton.appendChild(buttonOne)
        divButton.appendChild(buttonTwo)
@@ -106,22 +106,26 @@ const forWhoOne = () => {
 
        
        const buttons = document.querySelector(".divButtons")
-       let correctAnswer = categoryWho[0].correct
-         console.log(correctAnswer)
-         let h4 = document.createElement("h4")
+       
+         let h2 = document.createElement("h2")
          let scoreDisplay = document.querySelector(".score")
-         scoreDisplay.appendChild(h4)
+         scoreDisplay.appendChild(h2)
        buttons.addEventListener("click",() => {
-         alert("you clicked the button")
+         let correctAnswer = categoryWho[0].correct
+         console.log(correctAnswer)
          if(buttonOne === correctAnswer){
-           h4.innerHTML = points
+            alert("you got correct answer")
+           h2.innerHTML = points
          } else if (buttonOne != correctAnswer) {
-           h4.innerHTML = 0
+            alert("you got incorrect answer")
+           h2.innerHTML = 0
          }
          if(buttonTwo === correctAnswer){
-           h4.innerHTML = points
+            alert("you got correct answer")
+           h2.innerHTML = points
          } else if (buttonTwo != correctAnswer) {
-           h4.innerHTML = 0
+            alert("you got inccorrect answer")
+           h2.innerHTML = 0
           
          }
          
@@ -148,10 +152,34 @@ const forWhoTwo = () => {
    buttonTwo.innerHTML = categoryWho[1].answers[1]
    divButton.appendChild(buttonOne)
    divButton.appendChild(buttonTwo)
+
+   // const buttons = document.querySelector(".divButtons")
+   // let correctAnswer = categoryWho[1].correct
+   //   console.log(correctAnswer)
+   //   let h2 = document.createElement("h2")
+   //   let scoreDisplay = document.querySelector(".score")
+   //   scoreDisplay.appendChild(h2)
+   // buttons.addEventListener("click",() => {
+   //   alert("you clicked the button")
+   //   if(buttonOne === correctAnswer){
+   //     h2.innerHTML = points
+   //   } else if (buttonOne != correctAnswer) {
+   //     h2.innerHTML = 0
+   //   }
+   //   if(buttonTwo === correctAnswer){
+   //     h2.innerHTML = points
+   //   } else if (buttonTwo != correctAnswer) {
+   //     h2.innerHTML = 0
+      
+   //   }
+     
+   // })
    
 
 }
 forWhoTwo()
+
+
 const forWhoThree = () => {
    let questionCard = document.querySelector(".whoThree")
    let h3 = document.createElement("h3")
@@ -168,6 +196,28 @@ const forWhoThree = () => {
    buttonTwo.innerHTML = categoryWho[2].answers[1]
    divButton.appendChild(buttonOne)
    divButton.appendChild(buttonTwo)
+
+   // const buttons = document.querySelector(".divButtons")
+   // let correctAnswer = categoryWho[2].correct
+   //   console.log(correctAnswer)
+   //   let h2 = document.createElement("h2")
+   //   let scoreDisplay = document.querySelector(".score")
+   //   scoreDisplay.appendChild(h2)
+   // buttons.addEventListener("click",() => {
+   //   alert("you clicked the button")
+   //   if(buttonOne === correctAnswer){
+   //     h2.innerHTML = points
+   //   } else if (buttonOne != correctAnswer) {
+   //     h2.innerHTML = 0
+   //   }
+   //   if(buttonTwo === correctAnswer){
+   //     h2.innerHTML = points
+   //   } else if (buttonTwo != correctAnswer) {
+   //     h2.innerHTML = 0
+      
+   //   }
+     
+   // })
 
 }
 forWhoThree()
@@ -188,6 +238,7 @@ const forWhatOne = () => {
    buttonTwo.innerHTML = categoryWhat[0].answers[1]
    divButton.appendChild(buttonOne)
    divButton.appendChild(buttonTwo)
+
 
 }
 forWhatOne()
