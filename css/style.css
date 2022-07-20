@@ -19,7 +19,10 @@
  h2 {
     color: white;
     text-align: center;
-    border: 2px solid blue;
+    border: 2px solid #0000ff;
+    margin: 5px;
+    border-radius: 12px;
+    padding: 8px;
  }
  .jeopardy-game{
    width: 1011;
@@ -27,11 +30,12 @@
    display: flex;
    justify-content: center;
    perspective: 1000px;
-  border: 2px solid red;
+  
  }
  .who-container {
     display: flex;
     flex-direction: column;
+    
    
  }
  .what-container {
@@ -77,28 +81,21 @@
      transition: transform .2s;
    }
  
-   /* .jeopardy-card.flip {
-     transform: rotateY(180deg);
-     pointer-events: none;
-   } */
- 
-   /* .front-card.flip {
-     /* transform: rotateY(180deg);
-     pointer-events: none; */
-     
-   
-  */
-
- .divButtons {
-   pointer-events: auto;
-   z-index: 1;
- }
+  .front-card {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: center;
+  }
    .back-card{
     background: #101be8;
-    color: rgb(239, 189, 11);
-    font-size: 32px;
+    color: #efbd0b;
+    font-size: 50px;
     text-align: center;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   
  
    }
@@ -107,27 +104,39 @@
       pointer-events: none;
      }
 
+    
    h3 {
     font-size: 24px;
     margin-bottom: 15px;
+    display: flex;
+    
    }
  
    button {
-    padding: 5px;
+    padding: 8px;
     margin-left: 5px;
     font-size: 15px;
+    
    }
  
    .buttonOne {
-    background-color: rgb(64, 225, 64);
+    background-color: #40e140;
+  
    }
  
    .buttonTwo {
     background-color: rgb(241, 87, 87);
+    
    }
 
    .score {
-      border: 2px solid red;
       display: flex;
       justify-content: center;
+      background-color: none;
+      
+   }
+
+   h4 {
+      color: white;
+      font-size: 30px;
    }
