@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeopardy Game 2</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
    <h1>Welcome to Jeopardy game!</h1>
@@ -13,6 +16,7 @@
       <div class="who-container"> <h2>Who</h2>
       <div class="jeopardy-card">
          <div class="front-card whoOne"></div>
+         
          <div class="back-card">
             <div class="pointsValue">100</div>
          </div>
@@ -34,7 +38,7 @@
       <div class="jeopardy-card">
          <div class="front-card whatOne"></div>
          <div class="back-card">
-            <div class="pointsValue">200</div></div>
+            <div class="pointsValue">100</div></div>
       </div>
       <div class="jeopardy-card">
          <div class="front-card whatTwo"></div>
@@ -89,10 +93,15 @@
          </div>
       </div>
    </div>
+
     </section>
+    <div class="scoreWindow">
     <div class="score">
       <h1 id="totalScore">Score:</h1>
     </div>
+   </div>
+   
+   
     <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

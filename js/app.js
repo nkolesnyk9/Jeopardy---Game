@@ -101,18 +101,22 @@ const forWhoOne = () => {
     let scoreDisplay = document.querySelector("#totalScore")
       const checkAnswer = (e) => {
       let correctAnswer = categoryWho[0].correct
+      
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+         questionCard.classList.add("correct-answer")
+         questionCard.innerText = "Correct! You got 100 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
-          
+          questionCard.classList.add("wrong-answer")
+          questionCard.innerText = "Inccorect Answer"
       }
     }
    
-    buttonLeft.addEventListener("click", checkAnswer)
+   buttonLeft.addEventListener("click", checkAnswer)
    buttonRight.addEventListener("click", checkAnswer)
+   
    
 
 }
@@ -139,16 +143,19 @@ const forWhoTwo = () => {
       const checkAnswer = (e) => {
       let correctAnswer = categoryWho[1].correct
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+          questionCard.classList.add("correct-answer")
+          questionCard.innerText = "Correct! You got 200 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
+          questionCard.classList.add("wrong-answer")
+          questionCard.innerText = "Incorrect Answer"
           
       }
     }
   
-    buttonLeft.addEventListener("click", checkAnswer)
+   buttonLeft.addEventListener("click", checkAnswer)
    buttonRight.addEventListener("click", checkAnswer)
 
 
@@ -178,11 +185,14 @@ const forWhoThree = () => {
       const checkAnswer = (e) => {
       let correctAnswer = categoryWho[2].correct
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+          questionCard.classList.add("correct-answer")
+          questionCard.innerText = "Correct! You got 300 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
+          questionCard.classList.add("wrong-answer")
+          questionCard.innerText = "Incorrect Answer"
           
       }
     }
@@ -215,17 +225,22 @@ const forWhatOne = () => {
       const checkAnswer = (e) => {
       let correctAnswer = categoryWhat[0].correct
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+          questionCard.classList.add("correct-answer")
+          questionCard.innerText = "Correct! You got 100 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
+          questionCard.classList.add("wrong-answer")
+          questionCard.innerText = "Incorrect Answer"
           
       }
     }
   
     buttonLeft.addEventListener("click", checkAnswer)
    buttonRight.addEventListener("click", checkAnswer)
+   
+
 }
 forWhatOne()
 
@@ -250,16 +265,21 @@ const forWhatTwo = () => {
       const checkAnswer = (e) => {
       let correctAnswer = categoryWhat[1].correct
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+          questionCard.classList.add("correct-answer")
+          questionCard.innerText = "Correct! You got 200 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
+          questionCard.classList.add("wrong-answer")
+          questionCard.innerText = "Incorrect Answer"
           
       }
     }
     buttonLeft.addEventListener("click", checkAnswer)
    buttonRight.addEventListener("click", checkAnswer)
+
+
 }
 forWhatTwo()
 
@@ -284,11 +304,14 @@ const forWhatThree = () => {
       const checkAnswer = (e) => {
       let correctAnswer = categoryWhat[2].correct
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+          questionCard.classList.add("correct-answer")
+          questionCard.innerText = "Correct! You got 300 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
+          questionCard.classList.add("wrong-answer")
+          questionCard.innerText = "Correct! You got 100 points"
           
       }
     }
@@ -318,11 +341,14 @@ const forWhereOne = () => {
       const checkAnswer = (e) => {
       let correctAnswer = categoryWhere[0].correct
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+          questionCard.classList.add("correct-answer")
+          questionCard.innerText = "Correct! You got 100 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
+          questionCard.classList.add("wrong-answer")
+          questionCard.innerText = "Incorrect Answer"
           
       }
     }
@@ -352,11 +378,14 @@ const forWhereTwo = () => {
       const checkAnswer = (e) => {
       let correctAnswer = categoryWhere[1].correct
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+          questionCard.classList.add("correct-answer")
+          questionCard.innerText = "Correct! You got 200 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
+          questionCard.classList.add("wrong-answer")                                      
+          questionCard.innerText = "Incorrect Answer"
           
       }
     }
@@ -387,11 +416,14 @@ const forWhereThree = () => {
       const checkAnswer = (e) => {
       let correctAnswer = categoryWhere[2].correct
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+          questionCard.classList.add("correct-answer")
+          questionCard.innerText = "Correct! You got 300 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
+          questionCard.classList.add("wrong-answer")
+          questionCard.innerText = "Incorrect Answer"
           
       }
     }
@@ -422,11 +454,14 @@ const forWhenOne = () => {
       const checkAnswer = (e) => {
       let correctAnswer = categoryWhen[0].correct
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+          questionCard.classList.add("correct-answer")
+          questionCard.innerText = "Correct! You got 100 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
+          questionCard.classList.add("wrong-answer")
+          questionCard.innerText = "Incorrect Answer"
           
       }
     }
@@ -458,11 +493,14 @@ const forWhenTwo = () => {
       const checkAnswer = (e) => {
       let correctAnswer = categoryWhen[1].correct
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+          questionCard.classList.add("correct-answer")
+          questionCard.innerText = "Correct! You got 200 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
+          questionCard.classList.add("wrong-answer")
+          questionCard.innerText = "Incorrect Answer"
           
       }
     }
@@ -492,16 +530,36 @@ const forWhenThree = () => {
       const checkAnswer = (e) => {
       let correctAnswer = categoryWhen[2].correct
       if (e.target.innerText === correctAnswer) {
-          alert("you got correct answer")
+          questionCard.classList.add("correct-answer")
+          questionCard.innerText = "Correct! You got 300 points"
           score = score + points
           scoreDisplay.innerText = `Score: ${score}`
+          displayWin()
       } else  {
-          alert("you got incorrect answer")
+          questionCard.classList.add("wrong-answer")
+          questionCard.innerText = "Incorrect Answer"
           
       }
     }
     buttonLeft.addEventListener("click", checkAnswer)
    buttonRight.addEventListener("click", checkAnswer)
+   
 }
 forWhenThree()
+
+
+
+function displayWin() {
+
+   if(score >= 800){
+      console.log("You won")
+      let wonDisplay = document.querySelector(".score")
+      wonDisplay.classList.add("won")
+      wonDisplay.innerText = "🥳🥳Congrats you won!🥳🥳"
+
+   }
+
+   
+}
+
 

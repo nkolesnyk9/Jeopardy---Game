@@ -15,6 +15,7 @@
    text-align: center;
    margin: 8px;
    color: rgb(238, 211, 7);
+   font-size: 50px
  }
  h2 {
     color: white;
@@ -84,8 +85,10 @@
   .front-card {
    display: flex;
    flex-direction: column;
-   align-items: stretch;
+   align-items: center;
    justify-content: center;
+   font-family: 'Roboto Mono', monospace;
+   
   }
    .back-card{
     background: #101be8;
@@ -102,13 +105,15 @@
    .back-card.flip{
       transform: rotateY(180deg);
       pointer-events: none;
+      font-family: 'Roboto Mono', monospace;
      }
 
     
    h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 15px;
     display: flex;
+
     
    }
  
@@ -120,12 +125,16 @@
    }
  
    .buttonOne {
-    background-color: #40e140;
+    background-color:#F5E663;
+    border-radius: 12px;
+    font-family: 'Roboto Mono', monospace;
   
    }
- 
+
    .buttonTwo {
-    background-color: rgb(241, 87, 87);
+    background-color: #B744B8;
+    border-radius: 12px;
+    font-family: 'Roboto Mono', monospace;
     
    }
 
@@ -140,3 +149,70 @@
       color: white;
       font-size: 30px;
    }
+
+   .correct-answer {
+      background-color: rgb(186, 186, 24);
+      color: white;
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold;
+
+    }
+    
+    .wrong-answer {
+      background-color: rgb(221, 64, 56);
+      color: white;
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .scoreWindow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .won {
+      color: rgb(241, 226, 11);
+      font-size: 22px;
+      text-align: center;
+      font-weight: bold;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 150px;
+      background: rgb(134, 63, 228);
+      border-radius: 200px / 100px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      
+     
+    }
+
+    .won:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: vibrate 0.8s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes vibrate {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-1deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(1deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-1deg); }
+}
+    
+  
+
+ 
+
+    
