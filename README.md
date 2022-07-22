@@ -1,5 +1,3 @@
-The README.md file in the top level of your repo should have an explanation of what the project is and why you made it, your user stories and wireframes, explanations of the technologies used and the approaches taken, installation instructions, unsolved problems, and forthcoming features.
-
 # Jeopardy-game-
 Project Description
 I made Jeopardy Game that has 4 types of questions and 3 levels of complexity for each type of question. Each level has its own
