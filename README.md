@@ -13,7 +13,7 @@ As a player, I want to earn points if question is answered correctly
 As a player, I want to see my score
 
 Wire Frames!
-[jeopardy game](https://user-images.githubusercontent.com/106213098/180580430-b4851b7d-1800-43be-9c7f-8b87c652c88e.png)
+![jeopardy game](https://user-images.githubusercontent.com/106213098/180580430-b4851b7d-1800-43be-9c7f-8b87c652c88e.png)
 ![jeopardy1](https://user-images.githubusercontent.com/106213098/180579999-112ffc59-eb19-44d8-9dfc-80d25dd3b510.png)
 ![jeopardy game 4 excalidraw](https://user-images.githubusercontent.com/106213098/180580013-02617f55-002d-4c10-b307-6aa310e097cd.png)
 
