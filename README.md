@@ -1,7 +1,7 @@
 # Jeopardy-game-
 Project Description
 
-I made Jeopardy Game that has 4 types of questions and 3 levels of complexity for each type of question. Each level has its own
+Jeopardy Game that has 4 types of questions and 3 levels of complexity for each type of question. Each level has its own
 number of points. Each question has correct and incorrect answer for player to pick.
 Score is collecting all points earned by player choosing correct answers
 
