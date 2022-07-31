@@ -99,31 +99,31 @@ const forWhoOne = () => {
     const buttonRight = document.querySelector(".buttonRWhoOne")
 
     let scoreDisplay = document.querySelector("#totalScore")
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWho[0].correct
-      
-      if (e.target.innerText === correctAnswer) {
-         questionCard.classList.add("correct-answer")
-         questionCard.innerText = "Correct! You got 100 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")
-          questionCard.innerText = "Inccorect Answer"
-      }
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWho[0].correct
+
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 100 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Inccorect Answer"
+        }
     }
-   
-   buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
-   
-   
+
+    buttonLeft.addEventListener("click", checkAnswer)
+    buttonRight.addEventListener("click", checkAnswer)
+
+
 
 }
 forWhoOne()
 
 const forWhoTwo = () => {
-   let points = 200
+    let points = 200
     let questionCard = document.querySelector(".whoTwo")
     let h3 = document.createElement("h3")
     h3.innerHTML = categoryWho[1].question
@@ -138,34 +138,32 @@ const forWhoTwo = () => {
     questionCard.appendChild(buttonTwo)
     const buttonLeft = document.querySelector(".buttonLWhoTwo")
     const buttonRight = document.querySelector(".buttonRWhoTwo")
-   
+
     let scoreDisplay = document.querySelector("#totalScore")
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWho[1].correct
-      if (e.target.innerText === correctAnswer) {
-          questionCard.classList.add("correct-answer")
-          questionCard.innerText = "Correct! You got 200 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")
-          questionCard.innerText = "Incorrect Answer"
-          
-      }
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWho[1].correct
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 200 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Incorrect Answer"
+
+        }
     }
-  
-   buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
 
-
+    buttonLeft.addEventListener("click", checkAnswer)
+    buttonRight.addEventListener("click", checkAnswer)
 
 }
 forWhoTwo()
 
 
 const forWhoThree = () => {
-   let points = 300 
+    let points = 300
     let questionCard = document.querySelector(".whoThree")
     let h3 = document.createElement("h3")
     h3.innerHTML = categoryWho[2].question
@@ -182,29 +180,29 @@ const forWhoThree = () => {
     const buttonRight = document.querySelector(".buttonRWhoThree")
 
     let scoreDisplay = document.querySelector("#totalScore")
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWho[2].correct
-      if (e.target.innerText === correctAnswer) {
-          questionCard.classList.add("correct-answer")
-          questionCard.innerText = "Correct! You got 300 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")
-          questionCard.innerText = "Incorrect Answer"
-          
-      }
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWho[2].correct
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 300 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Incorrect Answer"
+
+        }
     }
-    
+
     buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
+    buttonRight.addEventListener("click", checkAnswer)
 
 }
 forWhoThree()
 
 const forWhatOne = () => {
-   let points = 100
+    let points = 100
     let questionCard = document.querySelector(".whatOne")
     let h3 = document.createElement("h3")
     h3.innerHTML = categoryWhat[0].question
@@ -222,30 +220,30 @@ const forWhatOne = () => {
     const buttonRight = document.querySelector(".buttonRWhatOne")
 
     let scoreDisplay = document.querySelector("#totalScore")
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWhat[0].correct
-      if (e.target.innerText === correctAnswer) {
-          questionCard.classList.add("correct-answer")
-          questionCard.innerText = "Correct! You got 100 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")
-          questionCard.innerText = "Incorrect Answer"
-          
-      }
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWhat[0].correct
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 100 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Incorrect Answer"
+
+        }
     }
-  
+
     buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
-   
+    buttonRight.addEventListener("click", checkAnswer)
+
 
 }
 forWhatOne()
 
 const forWhatTwo = () => {
-   let points = 200
+    let points = 200
     let questionCard = document.querySelector(".whatTwo")
     let h3 = document.createElement("h3")
     h3.innerHTML = categoryWhat[1].question
@@ -262,29 +260,29 @@ const forWhatTwo = () => {
     const buttonRight = document.querySelector(".buttonRWhatTwo")
 
     let scoreDisplay = document.querySelector("#totalScore")
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWhat[1].correct
-      if (e.target.innerText === correctAnswer) {
-          questionCard.classList.add("correct-answer")
-          questionCard.innerText = "Correct! You got 200 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")
-          questionCard.innerText = "Incorrect Answer"
-          
-      }
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWhat[1].correct
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 200 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Incorrect Answer"
+
+        }
     }
     buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
+    buttonRight.addEventListener("click", checkAnswer)
 
 
 }
 forWhatTwo()
 
 const forWhatThree = () => {
-   let points = 300
+    let points = 300
     let questionCard = document.querySelector(".whatThree")
     let h3 = document.createElement("h3")
     h3.innerHTML = categoryWhat[2].question
@@ -301,27 +299,27 @@ const forWhatThree = () => {
     const buttonRight = document.querySelector(".buttonRWhatThree")
 
     let scoreDisplay = document.querySelector("#totalScore")
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWhat[2].correct
-      if (e.target.innerText === correctAnswer) {
-          questionCard.classList.add("correct-answer")
-          questionCard.innerText = "Correct! You got 300 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")
-          questionCard.innerText = "Correct! You got 100 points"
-          
-      }
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWhat[2].correct
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 300 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Correct! You got 100 points"
+
+        }
     }
     buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
+    buttonRight.addEventListener("click", checkAnswer)
 }
 forWhatThree()
 
 const forWhereOne = () => {
-   let points = 100
+    let points = 100
     let questionCard = document.querySelector(".whereOne")
     let h3 = document.createElement("h3")
     h3.innerHTML = categoryWhere[0].question
@@ -338,27 +336,27 @@ const forWhereOne = () => {
     const buttonRight = document.querySelector(".buttonRWhereOne")
 
     let scoreDisplay = document.querySelector("#totalScore")
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWhere[0].correct
-      if (e.target.innerText === correctAnswer) {
-          questionCard.classList.add("correct-answer")
-          questionCard.innerText = "Correct! You got 100 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")
-          questionCard.innerText = "Incorrect Answer"
-          
-      }
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWhere[0].correct
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 100 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Incorrect Answer"
+
+        }
     }
     buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
+    buttonRight.addEventListener("click", checkAnswer)
 }
 forWhereOne()
 
 const forWhereTwo = () => {
-   let points = 200
+    let points = 200
     let questionCard = document.querySelector(".whereTwo")
     let h3 = document.createElement("h3")
     h3.innerHTML = categoryWhere[1].question
@@ -375,27 +373,27 @@ const forWhereTwo = () => {
     const buttonRight = document.querySelector(".buttonRWhereTwo")
 
     let scoreDisplay = document.querySelector("#totalScore")
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWhere[1].correct
-      if (e.target.innerText === correctAnswer) {
-          questionCard.classList.add("correct-answer")
-          questionCard.innerText = "Correct! You got 200 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")                                      
-          questionCard.innerText = "Incorrect Answer"
-          
-      }
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWhere[1].correct
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 200 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Incorrect Answer"
+
+        }
     }
     buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
+    buttonRight.addEventListener("click", checkAnswer)
 }
 forWhereTwo()
 
 const forWhereThree = () => {
-   let points = 300
+    let points = 300
     let questionCard = document.querySelector(".whereThree")
     let h3 = document.createElement("h3")
     h3.innerHTML = categoryWhere[2].question
@@ -412,28 +410,28 @@ const forWhereThree = () => {
     const buttonRight = document.querySelector(".buttonRWhereThree")
 
     let scoreDisplay = document.querySelector("#totalScore")
-    
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWhere[2].correct
-      if (e.target.innerText === correctAnswer) {
-          questionCard.classList.add("correct-answer")
-          questionCard.innerText = "Correct! You got 300 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")
-          questionCard.innerText = "Incorrect Answer"
-          
-      }
+
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWhere[2].correct
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 300 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Incorrect Answer"
+
+        }
     }
     buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
+    buttonRight.addEventListener("click", checkAnswer)
 }
 forWhereThree()
 
 const forWhenOne = () => {
-   let points = 100
+    let points = 100
     let questionCard = document.querySelector(".whenOne")
     let h3 = document.createElement("h3")
     h3.innerHTML = categoryWhen[0].question
@@ -451,28 +449,28 @@ const forWhenOne = () => {
     const buttonRight = document.querySelector(".buttonRWhenOne")
 
     let scoreDisplay = document.querySelector("#totalScore")
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWhen[0].correct
-      if (e.target.innerText === correctAnswer) {
-          questionCard.classList.add("correct-answer")
-          questionCard.innerText = "Correct! You got 100 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")
-          questionCard.innerText = "Incorrect Answer"
-          
-      }
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWhen[0].correct
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 100 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Incorrect Answer"
+
+        }
     }
     buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
+    buttonRight.addEventListener("click", checkAnswer)
 
 }
 forWhenOne()
 
 const forWhenTwo = () => {
-   let points = 200
+    let points = 200
     let questionCard = document.querySelector(".whenTwo")
     let h3 = document.createElement("h3")
     h3.innerHTML = categoryWhen[1].question
@@ -483,34 +481,34 @@ const forWhenTwo = () => {
     buttonTwo.setAttribute("class", "buttonRWhenTwo buttonTwo")
     buttonOne.innerHTML = categoryWhen[1].correct
     buttonTwo.innerHTML = categoryWhen[1].answers[1]
-   questionCard.appendChild(buttonOne)
+    questionCard.appendChild(buttonOne)
     questionCard.appendChild(buttonTwo)
     const buttonLeft = document.querySelector(".buttonLWhenTwo")
     const buttonRight = document.querySelector(".buttonRWhenTwo")
 
     let scoreDisplay = document.querySelector("#totalScore")
-   
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWhen[1].correct
-      if (e.target.innerText === correctAnswer) {
-          questionCard.classList.add("correct-answer")
-          questionCard.innerText = "Correct! You got 200 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")
-          questionCard.innerText = "Incorrect Answer"
-          
-      }
+
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWhen[1].correct
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 200 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Incorrect Answer"
+
+        }
     }
     buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
+    buttonRight.addEventListener("click", checkAnswer)
 }
 forWhenTwo()
 
 const forWhenThree = () => {
-   let points = 300
+    let points = 300
     let questionCard = document.querySelector(".whenThree")
     let h3 = document.createElement("h3")
     h3.innerHTML = categoryWhen[2].question
@@ -527,23 +525,23 @@ const forWhenThree = () => {
     const buttonRight = document.querySelector(".buttonRWhenThree")
 
     let scoreDisplay = document.querySelector("#totalScore")
-      const checkAnswer = (e) => {
-      let correctAnswer = categoryWhen[2].correct
-      if (e.target.innerText === correctAnswer) {
-          questionCard.classList.add("correct-answer")
-          questionCard.innerText = "Correct! You got 300 points"
-          score = score + points
-          scoreDisplay.innerText = `Score: ${score}`
-          displayWin()
-      } else  {
-          questionCard.classList.add("wrong-answer")
-          questionCard.innerText = "Incorrect Answer"
-          
-      }
+    const checkAnswer = (e) => {
+        let correctAnswer = categoryWhen[2].correct
+        if (e.target.innerText === correctAnswer) {
+            questionCard.classList.add("correct-answer")
+            questionCard.innerText = "Correct! You got 300 points"
+            score = score + points
+            scoreDisplay.innerText = `Score: ${score}`
+            displayWin()
+        } else {
+            questionCard.classList.add("wrong-answer")
+            questionCard.innerText = "Incorrect Answer"
+
+        }
     }
     buttonLeft.addEventListener("click", checkAnswer)
-   buttonRight.addEventListener("click", checkAnswer)
-   
+    buttonRight.addEventListener("click", checkAnswer)
+
 }
 forWhenThree()
 
@@ -551,15 +549,13 @@ forWhenThree()
 
 function displayWin() {
 
-   if(score >= 800){
-      console.log("You won")
-      let wonDisplay = document.querySelector(".score")
-      wonDisplay.classList.add("won")
-      wonDisplay.innerText = "🥳🥳Congrats you won!🥳🥳"
+    if (score >= 2400) {
+        console.log("You won")
+        let wonDisplay = document.querySelector(".score")
+        wonDisplay.classList.add("won")
+        wonDisplay.innerText = "🥳🥳Congrats you won!🥳🥳"
 
-   }
+    }
 
-   
+
 }
-
-
